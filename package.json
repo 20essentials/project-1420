@@ -1,0 +1,31 @@
+{
+  "name": "project",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "check": "astro check",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "pnpm build && pnpm gh-pages -d dist/"
+  },
+  "dependencies": {
+    "@astrojs/react": "7.0.1",
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "astro": "7.3.6",
+    "r3f-points-fx": "2.0.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "@types/three": "0.187.0",
+    "gh-pages": "6.3.0",
+    "typescript": "5.9.3"
+  }
+}

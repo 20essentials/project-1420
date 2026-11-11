@@ -1,0 +1,12 @@
+---
+import Layout from '@/app/layout.astro';
+import { ScrollMorphParticleScene } from '@/features/scroll-morph/scroll-morph-particle-scene';
+import '@/features/scroll-morph/scroll-morph.css';
+import '@/shared/particle-scene.css';
+---
+
+<Layout>
+  <main class='scroll-morph'>
+    <ScrollMorphParticleScene client:only='react' />
+  </main>
+</Layout>

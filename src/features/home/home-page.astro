@@ -1,0 +1,37 @@
+---
+import AgencySection from '@/features/home/sections/agency-section.astro';
+import ContactSection from '@/features/home/sections/contact-section.astro';
+import ExpertiseMarquee from '@/features/home/sections/expertise-marquee.astro';
+import HeroContent from '@/features/home/sections/hero-content.astro';
+import ServicesSection from '@/features/home/sections/services-section.astro';
+import SiteFooter from '@/features/home/sections/site-footer.astro';
+import SiteHeader from '@/features/home/sections/site-header.astro';
+import StatementSection from '@/features/home/sections/statement-section.astro';
+import TeamSection from '@/features/home/sections/team-section.astro';
+import Layout from '@/app/layout.astro';
+import { ParticleScene } from '@/features/home/particle-scene';
+import '@/features/home/home.css';
+import '@/shared/particle-scene.css';
+---
+
+<Layout>
+  <div class="site-shell">
+    <ParticleScene client:only="react" />
+    <div class="ambient-glow" aria-hidden="true"></div>
+    <SiteHeader />
+    <main>
+      <HeroContent />
+      <ExpertiseMarquee />
+      <AgencySection />
+      <ServicesSection />
+      <StatementSection />
+      <TeamSection />
+      <ContactSection />
+    </main>
+    <SiteFooter />
+  </div>
+</Layout>
+
+<script>
+  import '@/features/home/home-motion';
+</script>
